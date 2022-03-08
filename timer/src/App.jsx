@@ -54,13 +54,13 @@ function App() {
     <div className="App">
       <div className='container'>
         <div className="timer">
-          <label>horas:minutos:segundos.milisegundos</label>
+          <label>{unity(timer, 1)}:{unity(timer, 0)}:{(timer%60).toFixed(2)}</label>
         </div>
-        <span>X horas, Y minutos e Z segundos</span>
+        <span>{showTime(timer)}</span>
         <div className='operations'>
-          <button id="play">Play</button>
-          <button id="pause">Pause</button>
-          <button id="reset">Reset</button>
+          <button id="play" onClick={play}>Play</button>
+          <button id="pause" onClick={pause}>Pause</button>
+          <button id="reset" onClick={reset}>Reset</button>
         </div>
       </div>
     </div>

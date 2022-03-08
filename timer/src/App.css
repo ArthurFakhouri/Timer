@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(34, 30, 30);
+}
+
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container span{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.timer{
+    font-weight: bold;
+    height: 200px;
+    width: 200px;
+    border: solid 5px rgb(228, 30, 56);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.operations{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: .5s background;
+}
+
+#play{
+    background-color: rgb(45, 131, 98);
+}
+
+#play:hover{
+    background-color: rgb(32, 102, 75);
+    cursor: pointer;
+}
+
+#pause{
+    background-color: rgb(160, 131, 35);
+}
+
+#pause:hover{
+    background-color: rgb(128, 104, 26);
+    cursor: pointer;
+}
+
+#reset{
+    background-color: rgb(230, 53, 53);
+}
+
+#reset:hover{
+    background-color: rgb(172, 34, 34);
+    cursor: pointer;
+}

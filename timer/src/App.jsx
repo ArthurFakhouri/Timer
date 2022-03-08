@@ -10,7 +10,7 @@ function App() {
     let interval = null;
     if (allow) {
       interval = setInterval(() => {
-        setTimer(timer => timer + .1);
+        setTimer(timer => timer + .01);
       }, 10);
     } else {
       clearInterval(interval);
